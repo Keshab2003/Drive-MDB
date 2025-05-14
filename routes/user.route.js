@@ -91,8 +91,8 @@ router.post('/login' ,
 
         res.cookie('token' , token);
 
-
-        res.send("User logged in successfully");
+        res.render('home');
+        // res.send("User logged in successfully");
 });
 
 module.exports = router;
